@@ -1,0 +1,23 @@
+
+
+Delete from todo
+
+CREATE TABLE todo(
+id int,
+todo text,
+priority text,
+status text);
+
+INSERT INTO todo
+ (id, todo, priority, status)
+ values
+ (1, "learn Node.js", "HIGH", "IN PROGRESS"),
+ (2, "learn React.js", "HIGH", "TO DO"),
+ (3, "learn TypeScript", "MEDIUM", "TO DO"),
+ (4, "Watch Movie", "LOW", "TO DO"),
+ (5, "Bring Milk", "MEDIUM", "DONE"),
+ (6, "Do the Assignment", "HIGH", "DONE"),
+ (7, "CALL MOM", "LOW", "DONE"),
+ (8, "Make The Todo Table", "MEDIUM", "IN PROGRESS"),
+ (9, "Learn Django", "HIGH", "TO DO"),
+ (10, "BUY LANDS and GOLD", "HIGH", "TO DO");
