@@ -99,7 +99,13 @@ app.put("/todos/:todoId/", async (request, response) => {
       status = "${status}"
       WHERE id = ${todoId};
       `);
-  response.send("Todo Updated");
+  response.send(
+    `${Object.keys(request.body)
+      .join(", ")
+      .replace(/\w\S*/g, (w) =>
+        w.replace(/^\w/, (c) => c.toUpperCase())
+      )} Updated`
+  );
 });
 
 app.delete("/todos/:todoId/", async (request, response) => {
